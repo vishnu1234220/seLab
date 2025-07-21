@@ -1,0 +1,3 @@
+# Version 2 : Keyboard Input:
+temp = Temperature_modeling(float(input('Enter a:')),float(input('Enter b:')),float(input('Enter c:')),int(input('Enter Time:')))
+print(f"the Temperature at time {time} is {temp}")
