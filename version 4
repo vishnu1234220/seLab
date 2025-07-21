@@ -1,0 +1,11 @@
+# Version 4: Multiple Input from the text file
+with open('whether_multiple.txt','r') as files:
+  for file in files:
+    a,b,c,time = file.strip().split()
+    a = float(a)
+    b=float(b)
+    c = float(c)
+    time = int(time)
+
+    temp = Temperature_modeling(a,b,c,time)
+    print(f'The Temperature at time {time} is {temp}')
