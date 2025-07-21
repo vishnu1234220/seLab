@@ -1,0 +1,10 @@
+# Version 3: Single Input from the text file:
+with open('whether_single.txt','r') as files:
+  file = files.readline();
+  a,b,c,time = file.split()
+  a = float(a)
+  b= float(b)
+  c = float(c)
+  time = int(time)
+  temp = Temperature_modeling(a,b,c,time)
+  print(f'The Temperature at time {time} is {temp}')
